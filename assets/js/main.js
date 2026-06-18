@@ -82,12 +82,6 @@
         contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
-            // Guard: warn if form action is still the placeholder
-            if (contactForm.action.includes('YOUR_FORM_ID')) {
-                alert('Form is not yet configured. Please set up a Formspree account and replace YOUR_FORM_ID in index.html.');
-                return;
-            }
-
             const btn = contactForm.querySelector('button[type="submit"]');
             const orig = btn.innerHTML;
             btn.innerHTML = '<span>Sending…</span><i class="fa-solid fa-spinner fa-spin"></i>';
