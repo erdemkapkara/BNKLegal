@@ -445,45 +445,73 @@ h1, h2, h3 {
 .service-card:hover::before { height: 100%; }
 
 .card-header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
 }
 
+/* Large watermark number — decorative background */
 .card-num {
+    position: absolute;
+    top: -4px;
+    right: 18px;
     font-family: var(--serif);
-    font-style: italic;
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: var(--gold);
+    font-size: clamp(5rem, 8vw, 7rem);
+    font-weight: 600;
+    color: rgba(27,42,74,0.055);
     line-height: 1;
+    pointer-events: none;
+    user-select: none;
+    letter-spacing: -0.03em;
+    z-index: 0;
+    transition: color var(--ease);
 }
+.service-card:hover .card-num { color: rgba(184,150,90,0.1); }
 
 .card-icon {
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
     color: var(--gold);
-    opacity: 0.65;
+    opacity: 0.7;
     flex-shrink: 0;
-    transition: opacity var(--ease);
+    position: relative;
+    z-index: 1;
+    transition: opacity var(--ease), transform var(--ease);
 }
-.service-card:hover .card-icon { opacity: 1; }
+.service-card:hover .card-icon { opacity: 1; transform: scale(1.1); }
 
+/* Large serif title — key service name at a glance */
 .service-card h3 {
-    font-family: var(--sans);
-    font-size: 0.95rem;
+    font-family: var(--serif);
+    font-size: clamp(1.35rem, 2.2vw, 1.65rem);
     font-weight: 600;
     color: var(--navy);
-    margin-bottom: 14px;
-    line-height: 1.4;
+    margin-bottom: 0;
+    line-height: 1.2;
     letter-spacing: -0.01em;
+    position: relative;
+    z-index: 1;
 }
+
+/* Expanding gold underline on title */
+.service-card h3::after {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 2px;
+    background: var(--gold);
+    margin-top: 14px;
+    margin-bottom: 16px;
+    transition: width var(--ease-out);
+}
+.service-card:hover h3::after { width: 56px; }
 
 .service-card p {
     font-size: 0.86rem;
     color: var(--body);
     line-height: 1.9;
+    position: relative;
+    z-index: 1;
 }
 
 /* ─── ABOUT ───────────────────────────────────────────────────────────────── */
@@ -896,13 +924,37 @@ form {
 
     .lang-toggle { margin-left: auto; }
 
-    /* Hero — stack vertically */
-    #hero { grid-template-columns: 1fr; grid-template-rows: auto 280px; }
-    .hero-panel { padding-top: 110px; padding-bottom: 60px; }
-    .hero-visual { order: -1; height: 280px; }
-    .hero-visual-overlay {
-        background: linear-gradient(to bottom, rgba(17,29,54,0.3) 0%, var(--navy-dk) 100%);
+    /* Hero — full-bleed on mobile */
+    #hero {
+        display: block;
+        position: relative;
+        min-height: 100svh;
     }
+    .hero-visual {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+    }
+    .hero-visual-overlay {
+        background: linear-gradient(
+            160deg,
+            rgba(17,29,54,0.7) 0%,
+            rgba(17,29,54,0.92) 55%,
+            var(--navy-dk) 100%
+        );
+    }
+    .hero-panel {
+        position: relative;
+        z-index: 1;
+        background: transparent;
+        min-height: 100svh;
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+    .hero-panel::before { display: none; }
+    .hero-content { max-width: 100%; text-align: center; }
+    .tagline { margin-left: auto; margin-right: auto; }
+    .hero-btns { justify-content: center; }
     .hero-scroll { display: none; }
 
     /* Services */
@@ -913,7 +965,13 @@ form {
     /* About */
     .about-image-col { height: 300px; }
     .founders { grid-template-columns: 1fr; }
-    .about-text-col { padding-top: 56px; padding-bottom: 56px; }
+    .about-text-col {
+        padding: 56px var(--pad);
+    }
+
+    /* Service cards — mobile */
+    .card-num { font-size: 4.5rem; top: 2px; right: 14px; }
+    .service-card { padding: 32px 28px 40px; }
 
     /* Contact */
     .contact-banner { height: 200px; }
@@ -931,12 +989,14 @@ form {
 @media (max-width: 500px) {
     :root { --pad: 18px; }
 
-    #hero h1 { font-size: clamp(2.4rem, 11vw, 3.2rem); }
+    #hero h1 { font-size: clamp(2.6rem, 12vw, 3.4rem); }
     .hero-btns { flex-direction: column; align-items: stretch; }
-    .tagline { font-size: 0.9rem; }
+    .tagline { font-size: 0.92rem; }
 
-    #services, #contact { padding: 56px 0; }
-    .service-card { padding: 32px 28px 40px; }
+    #services, #contact { padding: 52px 0; }
+    .service-card { padding: 28px 22px 36px; }
+    .card-num { font-size: 3.8rem; }
+    .service-card h3 { font-size: 1.3rem; }
     .contact-form-wrap { padding: 24px 20px; }
 
     .footer-legal p { font-size: 0.68rem; }
