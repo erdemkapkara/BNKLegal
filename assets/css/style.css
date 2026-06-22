@@ -527,8 +527,8 @@ h1, h2, h3 {
 }
 
 .about-text-col {
-    padding: 104px var(--pad) 104px calc(max(var(--pad), (100vw - var(--max)) / 2 + var(--pad)));
-    max-width: calc((var(--max) - 400px) / 1 + var(--pad) * 1);
+    padding: 104px 60px 104px calc(max(var(--pad), (100vw - var(--max)) / 2 + var(--pad)));
+    min-width: 0;
 }
 
 .about-header { margin-bottom: 8px; }
