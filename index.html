@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <script type="application/ld+json">
@@ -36,7 +36,7 @@
 </head>
 <body>
 
-<!-- ── NAVBAR ─────────────────────────────────────────────── -->
+<!-- ── NAVBAR ───────────────────────────────────────────────────── -->
 <nav id="navbar" class="at-top">
     <div class="nav-inner">
         <a href="#hero" class="nav-logo">
@@ -46,140 +46,215 @@
             <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="navLinks">
-            <li><a href="#services" class="nav-link">Services</a></li>
-            <li><a href="#about"    class="nav-link">About</a></li>
-            <li><a href="#contact"  class="nav-link cta">Contact Us</a></li>
+            <li><a href="#services" class="nav-link" data-en="Services"    data-tr="Hizmetler">Services</a></li>
+            <li><a href="#about"    class="nav-link" data-en="About"       data-tr="Hakkımızda">About</a></li>
+            <li><a href="#contact"  class="nav-link cta" data-en="Contact Us" data-tr="İletişim">Contact Us</a></li>
         </ul>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">TR</button>
     </div>
 </nav>
 
-<!-- ── HERO ───────────────────────────────────────────────── -->
+<!-- ── HERO ─────────────────────────────────────────────────────── -->
 <section id="hero">
-    <div class="hero-body">
-        <p class="eyebrow">Est. 2021 &nbsp;·&nbsp; London, United Kingdom</p>
-        <h1>
-            <span>BNK Legal</span>
-            <em>Consultancy</em>
-        </h1>
-        <p class="tagline">Turkish legal consultancy and tailored business support for individuals, entrepreneurs and companies with interests in Türkiye and the United Kingdom.</p>
-        <div class="hero-btns">
-            <a href="#services" class="btn btn-white">Our Services</a>
-            <a href="#contact"  class="btn btn-ghost">Contact Us</a>
+    <div class="hero-panel">
+        <div class="hero-content">
+            <p class="eyebrow"
+               data-en="Est. 2021 &nbsp;·&nbsp; London, United Kingdom"
+               data-tr="Kur. 2021 &nbsp;·&nbsp; Londra, Birleşik Krallık">Est. 2021 &nbsp;·&nbsp; London, United Kingdom</p>
+            <h1>
+                <span data-en="BNK Legal"    data-tr="BNK Legal">BNK Legal</span>
+                <em   data-en="Consultancy"  data-tr="Danışmanlık">Consultancy</em>
+            </h1>
+            <p class="tagline"
+               data-en="Turkish legal consultancy and tailored business support for individuals, entrepreneurs and companies with interests in Türkiye and the United Kingdom."
+               data-tr="Türkiye ve Birleşik Krallık'ta çıkarları olan bireyler, girişimciler ve şirketler için Türk hukuki danışmanlığı ve özel ticari destek.">Turkish legal consultancy and tailored business support for individuals, entrepreneurs and companies with interests in Türkiye and the United Kingdom.</p>
+            <div class="hero-btns">
+                <a href="#services" class="btn btn-gold"  data-en="Our Services" data-tr="Hizmetlerimiz">Our Services</a>
+                <a href="#contact"  class="btn btn-ghost" data-en="Contact Us"   data-tr="İletişim">Contact Us</a>
+            </div>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">
+            <span class="scroll-line"></span>
         </div>
     </div>
-    <div class="scroll-hint" aria-hidden="true"></div>
+    <div class="hero-visual" role="img" aria-label="BNK Legal library">
+        <div class="hero-visual-overlay"></div>
+    </div>
 </section>
 
-<!-- ── SERVICES ───────────────────────────────────────────── -->
+<!-- ── SERVICES ─────────────────────────────────────────────────── -->
 <section id="services">
     <div class="wrap">
 
         <div class="section-intro reveal">
-            <p class="label">Our Services</p>
-            <h2>Turkish Legal &amp; Business Advisory</h2>
-            <p class="lead">Turkish legal consultancy, cross-border business support, commercial documentation and strategic guidance tailored to your needs.</p>
-            <p class="note">The services below provide a general overview and are not exhaustive. Each matter is considered individually. To find out whether your matter falls within our scope, please <a href="#contact">contact us</a> with a brief summary of the assistance required.</p>
+            <p class="label" data-en="Our Services" data-tr="Hizmetlerimiz">Our Services</p>
+            <h2 data-en="Turkish Legal &amp; Business Advisory" data-tr="Türk Hukuku ve İş Danışmanlığı">Turkish Legal &amp; Business Advisory</h2>
+            <div class="heading-rule"></div>
+            <p class="lead"
+               data-en="Turkish legal consultancy, cross-border business support, commercial documentation and strategic guidance tailored to your needs."
+               data-tr="İhtiyaçlarınıza özel Türk hukuki danışmanlığı, sınır ötesi iş desteği, ticari belgeler ve stratejik rehberlik.">Turkish legal consultancy, cross-border business support, commercial documentation and strategic guidance tailored to your needs.</p>
+            <p class="note"
+               data-en='The services below provide a general overview and are not exhaustive. Each matter is considered individually. To find out whether your matter falls within our scope, please <a href="#contact">contact us</a> with a brief summary of the assistance required.'
+               data-tr='Aşağıdaki hizmetler genel bir bakış sunmakta olup kapsamlı değildir. Her konu bireysel olarak değerlendirilir. Konunuzun kapsamımız dahilinde olup olmadığını öğrenmek için lütfen ihtiyaç duyduğunuz desteğe ilişkin kısa bir özet ile <a href="#contact">bizimle iletişime geçin</a>.'>The services below provide a general overview and are not exhaustive. Each matter is considered individually. To find out whether your matter falls within our scope, please <a href="#contact">contact us</a> with a brief summary of the assistance required.</p>
         </div>
 
-        <div class="service-list">
+        <div class="service-grid">
 
-            <div class="service-row reveal">
-                <div class="service-name"><h3>Turkish Legal Advisory</h3></div>
-                <div class="service-desc"><p>Legal advice, research and practical support in relation to Turkish legal, corporate and commercial matters, including coordination with and referral to suitably qualified Turkish lawyers where specialist advice or representation is required.</p></div>
+            <div class="service-card reveal">
+                <div class="card-header">
+                    <span class="card-num">01</span>
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3 data-en="Turkish Legal Advisory" data-tr="Türk Hukuku Danışmanlığı">Turkish Legal Advisory</h3>
+                <p data-en="Legal advice, research and practical support in relation to Turkish legal, corporate and commercial matters, including coordination with and referral to suitably qualified Turkish lawyers where specialist advice or representation is required."
+                   data-tr="Uzman tavsiyesi veya temsil gerektiğinde uygun nitelikteki Türk avukatlarıyla koordinasyon ve yönlendirme dahil olmak üzere Türk hukuku, kurumsal ve ticari konulara ilişkin hukuki tavsiye, araştırma ve pratik destek.">Legal advice, research and practical support in relation to Turkish legal, corporate and commercial matters, including coordination with and referral to suitably qualified Turkish lawyers where specialist advice or representation is required.</p>
             </div>
 
-            <div class="service-row reveal">
-                <div class="service-name"><h3>Business Establishment &amp; Strategic Support</h3></div>
-                <div class="service-desc"><p>Support for individuals and businesses seeking to establish, acquire, develop or expand a business in Türkiye, as well as general business, administrative and documentary support for entrepreneurs developing commercial activities involving the United Kingdom.</p></div>
+            <div class="service-card reveal">
+                <div class="card-header">
+                    <span class="card-num">02</span>
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+                </div>
+                <h3 data-en="Business Establishment &amp; Strategic Support" data-tr="İş Kurma ve Stratejik Destek">Business Establishment &amp; Strategic Support</h3>
+                <p data-en="Support for individuals and businesses seeking to establish, acquire, develop or expand a business in Türkiye, as well as general business, administrative and documentary support for entrepreneurs developing commercial activities involving the United Kingdom."
+                   data-tr="Türkiye'de iş kurmak, devralmak, geliştirmek veya genişletmek isteyen bireyler ve işletmelere destek ile Birleşik Krallık'ı kapsayan ticari faaliyetler geliştiren girişimcilere genel iş, idari ve belgesel destek.">Support for individuals and businesses seeking to establish, acquire, develop or expand a business in Türkiye, as well as general business, administrative and documentary support for entrepreneurs developing commercial activities involving the United Kingdom.</p>
             </div>
 
-            <div class="service-row reveal">
-                <div class="service-name"><h3>Corporate &amp; Commercial Advisory</h3></div>
-                <div class="service-desc"><p>Assistance with corporate structures, shareholder arrangements, partnerships, corporate governance and commercial relationships involving Türkiye, including cross-border business arrangements between Türkiye and the United Kingdom.</p></div>
+            <div class="service-card reveal">
+                <div class="card-header">
+                    <span class="card-num">03</span>
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                </div>
+                <h3 data-en="Corporate &amp; Commercial Advisory" data-tr="Kurumsal ve Ticari Danışmanlık">Corporate &amp; Commercial Advisory</h3>
+                <p data-en="Assistance with corporate structures, shareholder arrangements, partnerships, corporate governance and commercial relationships involving Türkiye, including cross-border business arrangements between Türkiye and the United Kingdom."
+                   data-tr="Türkiye'yi kapsayan kurumsal yapılar, hissedar düzenlemeleri, ortaklıklar, kurumsal yönetim ve ticari ilişkiler ile Türkiye ve Birleşik Krallık arasındaki sınır ötesi iş düzenlemelerine ilişkin yardım.">Assistance with corporate structures, shareholder arrangements, partnerships, corporate governance and commercial relationships involving Türkiye, including cross-border business arrangements between Türkiye and the United Kingdom.</p>
             </div>
 
-            <div class="service-row reveal">
-                <div class="service-name"><h3>Contract Drafting &amp; Commercial Documentation</h3></div>
-                <div class="service-desc"><p>Preparation, review and revision of contracts, agreements and commercial documents relating to Turkish law matters and cross-border business arrangements, including identification of key legal and commercial risks and coordination with relevant professional advisers where required.</p></div>
+            <div class="service-card reveal">
+                <div class="card-header">
+                    <span class="card-num">04</span>
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+                </div>
+                <h3 data-en="Contract Drafting &amp; Commercial Documentation" data-tr="Sözleşme Hazırlama ve Ticari Belgeler">Contract Drafting &amp; Commercial Documentation</h3>
+                <p data-en="Preparation, review and revision of contracts, agreements and commercial documents relating to Turkish law matters and cross-border business arrangements, including identification of key legal and commercial risks and coordination with relevant professional advisers where required."
+                   data-tr="Temel hukuki ve ticari risklerin belirlenmesi ve gerektiğinde ilgili profesyonel danışmanlarla koordinasyon dahil olmak üzere Türk hukuku konuları ve sınır ötesi iş düzenlemelerine ilişkin sözleşme, anlaşma ve ticari belgelerin hazırlanması, incelenmesi ve revize edilmesi.">Preparation, review and revision of contracts, agreements and commercial documents relating to Turkish law matters and cross-border business arrangements, including identification of key legal and commercial risks and coordination with relevant professional advisers where required.</p>
             </div>
 
-            <div class="service-row reveal">
-                <div class="service-name"><h3>Cross-Border Business &amp; Market Entry Support</h3></div>
-                <div class="service-desc"><p>Strategic and practical support for businesses trading, investing, collaborating or entering into commercial relationships between the United Kingdom and Türkiye, including assistance with market entry, documentation, negotiations and coordination between the relevant parties and professional advisers.</p></div>
+            <div class="service-card reveal">
+                <div class="card-header">
+                    <span class="card-num">05</span>
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                </div>
+                <h3 data-en="Cross-Border Business &amp; Market Entry Support" data-tr="Sınır Ötesi İş ve Pazar Giriş Desteği">Cross-Border Business &amp; Market Entry Support</h3>
+                <p data-en="Strategic and practical support for businesses trading, investing, collaborating or entering into commercial relationships between the United Kingdom and Türkiye, including assistance with market entry, documentation, negotiations and coordination between the relevant parties and professional advisers."
+                   data-tr="Pazar girişi, belgeler, müzakereler ve ilgili taraflar ile profesyonel danışmanlar arasındaki koordinasyon konusunda yardım dahil olmak üzere Birleşik Krallık ile Türkiye arasında ticaret yapan, yatırım yapan, iş birliği yapan veya ticari ilişkiye giren işletmelere stratejik ve pratik destek.">Strategic and practical support for businesses trading, investing, collaborating or entering into commercial relationships between the United Kingdom and Türkiye, including assistance with market entry, documentation, negotiations and coordination between the relevant parties and professional advisers.</p>
             </div>
 
-            <div class="service-row reveal">
-                <div class="service-name"><h3>Legal, Corporate &amp; Bilingual Document Support</h3></div>
-                <div class="service-desc"><p>Preparation and review of legal, corporate and commercial documents, including legal research, written guidance, formal correspondence, bilingual drafting and terminology review. We also assist with notarisation, apostille and legalisation requirements and coordinate with appropriately qualified translators where certified or sworn translation is required.</p></div>
+            <div class="service-card reveal">
+                <div class="card-header">
+                    <span class="card-num">06</span>
+                    <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/><line x1="12" y1="7" x2="16" y2="7"/><line x1="12" y1="11" x2="16" y2="11"/></svg>
+                </div>
+                <h3 data-en="Legal, Corporate &amp; Bilingual Document Support" data-tr="Hukuki, Kurumsal ve İki Dilli Belge Desteği">Legal, Corporate &amp; Bilingual Document Support</h3>
+                <p data-en="Preparation and review of legal, corporate and commercial documents, including legal research, written guidance, formal correspondence, bilingual drafting and terminology review. We also assist with notarisation, apostille and legalisation requirements and coordinate with appropriately qualified translators where certified or sworn translation is required."
+                   data-tr="Hukuki araştırma, yazılı rehberlik, resmi yazışma, iki dilli taslak hazırlama ve terminoloji incelemesi dahil olmak üzere hukuki, kurumsal ve ticari belgelerin hazırlanması ve incelenmesi. Noterlik, apostil ve tasdik gereksinimlerine de yardımcı oluyor; onaylı veya yeminli çeviri gerektiğinde uygun nitelikteki çevirmenlerle koordinasyon sağlıyoruz.">Preparation and review of legal, corporate and commercial documents, including legal research, written guidance, formal correspondence, bilingual drafting and terminology review. We also assist with notarisation, apostille and legalisation requirements and coordinate with appropriately qualified translators where certified or sworn translation is required.</p>
             </div>
 
         </div>
     </div>
 </section>
 
-<!-- ── ABOUT ──────────────────────────────────────────────── -->
+<!-- ── ABOUT ─────────────────────────────────────────────────────── -->
 <section id="about">
-    <div class="wrap">
+    <div class="about-layout">
 
-        <div class="about-header reveal">
-            <p class="label">About Us</p>
-            <h2>BNK Legal Consultancy Ltd</h2>
-        </div>
+        <div class="about-text-col">
+            <div class="about-header reveal">
+                <p class="label" data-en="About Us" data-tr="Hakkımızda">About Us</p>
+                <h2 data-en="BNK Legal Consultancy Ltd" data-tr="BNK Legal Consultancy Ltd">BNK Legal Consultancy Ltd</h2>
+                <div class="heading-rule"></div>
+            </div>
 
-        <div class="about-text">
-            <p class="lead reveal">BNK Legal Consultancy Ltd is an independent legal and business consultancy founded by Busra Nur Kapkara and Erdem Kapkara and incorporated in England and Wales in March 2021.</p>
+            <p class="lead reveal"
+               data-en="BNK Legal Consultancy Ltd is an independent legal and business consultancy founded by Busra Nur Kapkara and Erdem Kapkara and incorporated in England and Wales in March 2021."
+               data-tr="BNK Legal Consultancy Ltd, Busra Nur Kapkara ve Erdem Kapkara tarafından kurulan ve Mart 2021'de İngiltere ve Galler'de tescil edilen bağımsız bir hukuk ve iş danışmanlığıdır.">BNK Legal Consultancy Ltd is an independent legal and business consultancy founded by Busra Nur Kapkara and Erdem Kapkara and incorporated in England and Wales in March 2021.</p>
 
-            <p class="reveal">We provide Turkish legal consultancy and cross-border business support to individuals, entrepreneurs and companies based in the United Kingdom, Türkiye and internationally. Our work is particularly focused on clients who have legal or commercial interests in Türkiye, including those establishing or developing a business, working with Turkish companies, entering into partnerships, reviewing commercial arrangements or requiring assistance with Turkish legal and corporate matters.</p>
+            <p class="reveal"
+               data-en="We provide Turkish legal consultancy and cross-border business support to individuals, entrepreneurs and companies based in the United Kingdom, Türkiye and internationally. Our work is particularly focused on clients who have legal or commercial interests in Türkiye, including those establishing or developing a business, working with Turkish companies, entering into partnerships, reviewing commercial arrangements or requiring assistance with Turkish legal and corporate matters."
+               data-tr="Birleşik Krallık, Türkiye ve uluslararası alanda faaliyet gösteren bireyler, girişimciler ve şirketlere Türk hukuki danışmanlığı ve sınır ötesi iş desteği sunuyoruz. Çalışmalarımız özellikle Türkiye'de hukuki veya ticari çıkarları olan; iş kuran veya geliştiren, Türk şirketleriyle çalışan, ortaklıklara giren, ticari düzenlemeleri gözden geçiren veya Türk hukuku ve kurumsal konularda yardıma ihtiyaç duyan müvekkillere odaklanmaktadır.">We provide Turkish legal consultancy and cross-border business support to individuals, entrepreneurs and companies based in the United Kingdom, Türkiye and internationally. Our work is particularly focused on clients who have legal or commercial interests in Türkiye, including those establishing or developing a business, working with Turkish companies, entering into partnerships, reviewing commercial arrangements or requiring assistance with Turkish legal and corporate matters.</p>
 
             <div class="founders reveal">
                 <div class="founder">
-                    <h3>Busra Nur Kapkara</h3>
-                    <p class="role">Director &amp; Co-Founder</p>
-                    <p>Busra Nur Kapkara is an Avukat admitted to the Istanbul Bar Association and a practising Solicitor of England and Wales. She leads the company's legal and consultancy work and is responsible for its professional direction and client matters.</p>
+                    <div class="founder-inner">
+                        <h3 data-en="Busra Nur Kapkara" data-tr="Busra Nur Kapkara">Busra Nur Kapkara</h3>
+                        <p class="role" data-en="Director &amp; Co-Founder" data-tr="Direktör &amp; Kurucu Ortak">Director &amp; Co-Founder</p>
+                        <p data-en="Busra Nur Kapkara is an Avukat admitted to the Istanbul Bar Association and a practising Solicitor of England and Wales. She leads the company's legal and consultancy work and is responsible for its professional direction and client matters."
+                           data-tr="Busra Nur Kapkara, İstanbul Barosu'na kayıtlı bir Avukat ve İngiltere ile Galler'de faaliyette bulunan bir Solicitor'dır. Şirketin hukuki ve danışmanlık çalışmalarına liderlik etmekte, mesleki yön ve müvekkil konularından sorumlu bulunmaktadır.">Busra Nur Kapkara is an Avukat admitted to the Istanbul Bar Association and a practising Solicitor of England and Wales. She leads the company's legal and consultancy work and is responsible for its professional direction and client matters.</p>
+                    </div>
                 </div>
                 <div class="founder">
-                    <h3>Erdem Kapkara</h3>
-                    <p class="role">Director &amp; Co-Founder</p>
-                    <p>Erdem Kapkara oversees the company's day-to-day administrative and operational support, including the coordination of enquiries, appointments, documentation, records and invoicing. He also liaises with clients and external professionals on administrative matters. He does not provide legal advice.</p>
+                    <div class="founder-inner">
+                        <h3 data-en="Erdem Kapkara" data-tr="Erdem Kapkara">Erdem Kapkara</h3>
+                        <p class="role" data-en="Director &amp; Co-Founder" data-tr="Direktör &amp; Kurucu Ortak">Director &amp; Co-Founder</p>
+                        <p data-en="Erdem Kapkara oversees the company's day-to-day administrative and operational support, including the coordination of enquiries, appointments, documentation, records and invoicing. He also liaises with clients and external professionals on administrative matters. He does not provide legal advice."
+                           data-tr="Erdem Kapkara, sorgu koordinasyonu, randevular, belgeler, kayıtlar ve faturalandırma dahil olmak üzere şirketin günlük idari ve operasyonel desteğini yönetmektedir. Ayrıca idari konularda müvekkiller ve dış profesyonellerle iletişim kurmaktadır. Hukuki tavsiye vermemektedir.">Erdem Kapkara oversees the company's day-to-day administrative and operational support, including the coordination of enquiries, appointments, documentation, records and invoicing. He also liaises with clients and external professionals on administrative matters. He does not provide legal advice.</p>
+                    </div>
                 </div>
             </div>
 
-            <p class="reveal">Since 2021, we have supported clients with a range of legal, contractual, corporate and business-related matters. Much of our work comes through personal recommendations, returning clients and established professional relationships.</p>
+            <p class="reveal"
+               data-en="Since 2021, we have supported clients with a range of legal, contractual, corporate and business-related matters. Much of our work comes through personal recommendations, returning clients and established professional relationships."
+               data-tr="2021'den bu yana çeşitli hukuki, sözleşmesel, kurumsal ve iş ile ilgili konularda müvekkillere destek olduk. Çalışmalarımızın büyük çoğunluğu kişisel tavsiyeler, geri dönen müvekkiller ve köklü mesleki ilişkiler aracılığıyla gelmektedir.">Since 2021, we have supported clients with a range of legal, contractual, corporate and business-related matters. Much of our work comes through personal recommendations, returning clients and established professional relationships.</p>
 
-            <p class="reveal">We work directly with our clients and do not offer standardised online packages. Each enquiry is reviewed individually before instructions are accepted. Depending on the client's location and the nature of the matter, consultations may take place in person, by email, by telephone or by video conference.</p>
+            <p class="reveal"
+               data-en="We work directly with our clients and do not offer standardised online packages. Each enquiry is reviewed individually before instructions are accepted. Depending on the client's location and the nature of the matter, consultations may take place in person, by email, by telephone or by video conference."
+               data-tr="Müvekkilleriyle doğrudan çalışıyor ve standart çevrimiçi paketler sunmuyoruz. Her başvuru, talimatlar kabul edilmeden önce bireysel olarak incelenir. Müvekkilin konumuna ve konunun niteliğine bağlı olarak danışmalar yüz yüze, e-posta, telefon veya video konferans yoluyla gerçekleştirilebilir.">We work directly with our clients and do not offer standardised online packages. Each enquiry is reviewed individually before instructions are accepted. Depending on the client's location and the nature of the matter, consultations may take place in person, by email, by telephone or by video conference.</p>
 
             <div class="sra-notice reveal">
-                <p>BNK Legal Consultancy Ltd is not authorised or regulated by the Solicitors Regulation Authority as a law firm. Busra Nur Kapkara is a practising Solicitor of England and Wales and is individually authorised and regulated by the Solicitors Regulation Authority. Her individual authorisation is separate from the regulatory status of BNK Legal Consultancy Ltd and does not mean that the company itself is an SRA-authorised practice.</p>
+                <p data-en="BNK Legal Consultancy Ltd is not authorised or regulated by the Solicitors Regulation Authority as a law firm. Busra Nur Kapkara is a practising Solicitor of England and Wales and is individually authorised and regulated by the Solicitors Regulation Authority. Her individual authorisation is separate from the regulatory status of BNK Legal Consultancy Ltd and does not mean that the company itself is an SRA-authorised practice."
+                   data-tr="BNK Legal Consultancy Ltd, Solicitors Regulation Authority tarafından bir hukuk bürosu olarak yetkilendirilmemiş veya düzenlenmemiştir. Busra Nur Kapkara, İngiltere ve Galler'de faaliyette bulunan bir Solicitor olup Solicitors Regulation Authority tarafından bireysel olarak yetkilendirilmiş ve düzenlenmektedir. Bireysel yetkisi, BNK Legal Consultancy Ltd'nin düzenleyici statüsünden ayrıdır ve şirketin kendisinin SRA tarafından yetkilendirilmiş bir büro olduğu anlamına gelmez.">BNK Legal Consultancy Ltd is not authorised or regulated by the Solicitors Regulation Authority as a law firm. Busra Nur Kapkara is a practising Solicitor of England and Wales and is individually authorised and regulated by the Solicitors Regulation Authority. Her individual authorisation is separate from the regulatory status of BNK Legal Consultancy Ltd and does not mean that the company itself is an SRA-authorised practice.</p>
+            </div>
+        </div>
+
+        <div class="about-image-col" aria-hidden="true">
+            <div class="about-img-wrap">
+                <img src="Pictures/bg7.jpg" alt="" class="about-img">
+                <div class="about-img-frame"></div>
             </div>
         </div>
 
     </div>
 </section>
 
-<!-- ── CONTACT ────────────────────────────────────────────── -->
+<!-- ── CONTACT ───────────────────────────────────────────────────── -->
 <section id="contact">
+    <div class="contact-banner" aria-hidden="true">
+        <div class="contact-banner-overlay"></div>
+    </div>
     <div class="wrap">
         <div class="contact-grid">
 
             <div class="contact-info reveal">
-                <p class="label">Contact</p>
-                <h2>Get in Touch</h2>
-                <p>To find out whether your matter falls within our scope of services, please contact us by email or telephone with a brief summary of the assistance required.</p>
+                <p class="label" data-en="Contact" data-tr="İletişim">Contact</p>
+                <h2 data-en="Get in Touch" data-tr="Bize Ulaşın">Get in Touch</h2>
+                <div class="heading-rule"></div>
+                <p data-en="To find out whether your matter falls within our scope of services, please contact us by email or telephone with a brief summary of the assistance required."
+                   data-tr="Konunuzun hizmet kapsamımız dahilinde olup olmadığını öğrenmek için lütfen ihtiyaç duyduğunuz desteğe ilişkin kısa bir özet ile e-posta veya telefon aracılığıyla bizimle iletişime geçin.">To find out whether your matter falls within our scope of services, please contact us by email or telephone with a brief summary of the assistance required.</p>
 
                 <dl class="details">
                     <div>
-                        <dt>Email</dt>
+                        <dt data-en="Email"     data-tr="E-posta">Email</dt>
                         <dd><a href="mailto:info@bnklegal.co.uk">info@bnklegal.co.uk</a></dd>
                     </div>
                     <div>
-                        <dt>Telephone</dt>
+                        <dt data-en="Telephone" data-tr="Telefon">Telephone</dt>
                         <dd>
                             <a href="tel:+447587581738">+44 7587 581738</a><br>
                             <a href="tel:+447979466902">+44 7979 466902</a>
                         </dd>
                     </div>
                     <div>
-                        <dt>Office</dt>
+                        <dt data-en="Office"    data-tr="Ofis">Office</dt>
                         <dd>Office 403, Screenworks<br>22 Highbury Grove<br>London, N5 2ER</dd>
                     </div>
                 </dl>
@@ -188,23 +263,39 @@
             <div class="contact-form-wrap reveal">
                 <form id="contactForm" action="https://formspree.io/f/xwvjdvob" method="POST">
                     <div class="field">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        <label for="name" data-en="Full Name" data-tr="Ad Soyad">Full Name</label>
+                        <input type="text" id="name" name="name"
+                               placeholder="Your full name"
+                               data-ph-en="Your full name"
+                               data-ph-tr="Adınız Soyadınız" required>
                     </div>
                     <div class="field">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        <label for="email" data-en="Email Address" data-tr="E-posta Adresi">Email Address</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="your@email.com"
+                               data-ph-en="your@email.com"
+                               data-ph-tr="your@email.com" required>
                     </div>
                     <div class="field">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" placeholder="Please describe how we can assist you..." required></textarea>
+                        <label for="message" data-en="Message" data-tr="Mesaj">Message</label>
+                        <textarea id="message" name="message" rows="6"
+                                  placeholder="Please describe how we can assist you..."
+                                  data-ph-en="Please describe how we can assist you..."
+                                  data-ph-tr="Nasıl yardımcı olabileceğimizi lütfen açıklayın..." required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-dark btn-full">Send Enquiry</button>
-                    <p class="form-note">Your enquiry is treated with complete confidentiality.</p>
+                    <button type="submit" class="btn btn-navy btn-full"
+                            data-en="Send Enquiry" data-tr="Sorgu Gönder">Send Enquiry</button>
+                    <p class="form-note"
+                       data-en="Your enquiry is treated with complete confidentiality."
+                       data-tr="Sorgunuz tam gizlilikle işleme alınır.">Your enquiry is treated with complete confidentiality.</p>
                 </form>
                 <div id="formSuccess" class="form-success">
-                    <h3>Thank You</h3>
-                    <p>Your enquiry has been received. We will be in touch shortly.</p>
+                    <div class="success-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
+                    </div>
+                    <h3 data-en="Thank You" data-tr="Teşekkürler">Thank You</h3>
+                    <p data-en="Your enquiry has been received. We will be in touch shortly."
+                       data-tr="Sorgunuz alınmıştır. En kısa sürede sizinle iletişime geçeceğiz.">Your enquiry has been received. We will be in touch shortly.</p>
                 </div>
             </div>
 
@@ -212,22 +303,27 @@
     </div>
 </section>
 
-<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<!-- ── FOOTER ────────────────────────────────────────────────────── -->
 <footer id="footer">
+    <div class="footer-glow" aria-hidden="true"></div>
     <div class="wrap">
         <div class="footer-top">
             <img src="yenlogo.png" alt="BNK Legal Consultancy" class="logo logo-footer">
             <nav aria-label="Footer navigation">
-                <a href="#services">Services</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+                <a href="#services" data-en="Services" data-tr="Hizmetler">Services</a>
+                <a href="#about"    data-en="About"    data-tr="Hakkımızda">About</a>
+                <a href="#contact"  data-en="Contact"  data-tr="İletişim">Contact</a>
             </nav>
         </div>
         <div class="footer-legal">
-            <p>&copy; 2021 BNK Legal Consultancy Ltd. All rights reserved.</p>
-            <p>The information provided on this website is for general informational purposes only and does not constitute legal advice or create a solicitor-client relationship. Advice should be obtained in relation to your specific circumstances before taking or refraining from any action.</p>
-            <p>BNK Legal Consultancy Ltd is registered in England and Wales under company number 13261158. The company is not authorised or regulated by the Solicitors Regulation Authority as a law firm.</p>
-            <p>Busra Nur Kapkara is a practising Solicitor of England and Wales and is individually authorised and regulated by the Solicitors Regulation Authority. Her individual authorisation does not extend to BNK Legal Consultancy Ltd or automatically apply to all services provided by the company.</p>
+            <p data-en="&copy; 2021 BNK Legal Consultancy Ltd. All rights reserved."
+               data-tr="&copy; 2021 BNK Legal Consultancy Ltd. Tüm hakları saklıdır.">&copy; 2021 BNK Legal Consultancy Ltd. All rights reserved.</p>
+            <p data-en="The information provided on this website is for general informational purposes only and does not constitute legal advice or create a solicitor-client relationship. Advice should be obtained in relation to your specific circumstances before taking or refraining from any action."
+               data-tr="Bu web sitesinde sağlanan bilgiler yalnızca genel bilgilendirme amaçlıdır ve hukuki tavsiye teşkil etmez veya avukat-müvekkil ilişkisi oluşturmaz. Herhangi bir eylemde bulunmadan veya eylemden kaçınmadan önce özel koşullarınıza ilişkin tavsiye alınmalıdır.">The information provided on this website is for general informational purposes only and does not constitute legal advice or create a solicitor-client relationship. Advice should be obtained in relation to your specific circumstances before taking or refraining from any action.</p>
+            <p data-en="BNK Legal Consultancy Ltd is registered in England and Wales under company number 13261158. The company is not authorised or regulated by the Solicitors Regulation Authority as a law firm."
+               data-tr="BNK Legal Consultancy Ltd, İngiltere ve Galler'de 13261158 şirket numarasıyla tescil edilmiştir. Şirket, Solicitors Regulation Authority tarafından bir hukuk bürosu olarak yetkilendirilmemiş veya düzenlenmemiştir.">BNK Legal Consultancy Ltd is registered in England and Wales under company number 13261158. The company is not authorised or regulated by the Solicitors Regulation Authority as a law firm.</p>
+            <p data-en="Busra Nur Kapkara is a practising Solicitor of England and Wales and is individually authorised and regulated by the Solicitors Regulation Authority. Her individual authorisation does not extend to BNK Legal Consultancy Ltd or automatically apply to all services provided by the company."
+               data-tr="Busra Nur Kapkara, İngiltere ve Galler'de faaliyette bulunan bir Solicitor olup Solicitors Regulation Authority tarafından bireysel olarak yetkilendirilmiş ve düzenlenmektedir. Bireysel yetkisi BNK Legal Consultancy Ltd'ye uzanmamakta veya şirket tarafından sağlanan tüm hizmetlere otomatik olarak uygulanmamaktadır.">Busra Nur Kapkara is a practising Solicitor of England and Wales and is individually authorised and regulated by the Solicitors Regulation Authority. Her individual authorisation does not extend to BNK Legal Consultancy Ltd or automatically apply to all services provided by the company.</p>
         </div>
     </div>
 </footer>
