@@ -12,7 +12,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <script type="application/ld+json">
@@ -20,9 +20,10 @@
         "@context": "https://schema.org",
         "@type": "LegalService",
         "name": "BNK Legal Consultancy Ltd",
-        "description": "Turkish legal consultancy and tailored business support for individuals, entrepreneurs and companies with interests in Türkiye and the United Kingdom.",
+        "description": "Turkish legal consultancy and tailored business support.",
         "url": "https://bnklegal.co.uk/",
         "email": "info@bnklegal.co.uk",
+        "telephone": "+447587581738",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Office 403, Screenworks, 22 Highbury Grove",
@@ -35,200 +36,202 @@
 </head>
 <body>
 
-    <!-- NAVIGATION -->
-    <nav id="navbar" class="transparent">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <img src="yenlogo.png" alt="BNK Legal Consultancy" class="logo-img">
-            </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link nav-cta">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- HERO -->
-    <section id="hero">
-        <div class="hero-content">
-            <p class="hero-eyebrow">EST. 2021 &nbsp;&middot;&nbsp; LONDON, UNITED KINGDOM</p>
-            <h1 class="hero-title">
-                <span>BNK Legal</span>
-                <em>Consultancy</em>
-            </h1>
-            <p class="hero-desc">Turkish legal consultancy and tailored business support for individuals, entrepreneurs and companies with interests in Türkiye and the United Kingdom.</p>
-            <div class="hero-btns">
-                <a href="#services" class="btn btn-primary">Our Services</a>
-                <a href="#contact" class="btn btn-outline">Contact Us</a>
-            </div>
-        </div>
-        <a href="#services" class="hero-scroll" aria-label="Scroll down">
-            <span></span>
+<!-- ── NAVBAR ─────────────────────────────────────────────── -->
+<nav id="navbar" class="at-top">
+    <div class="nav-inner">
+        <a href="#hero" class="nav-logo">
+            <img src="yenlogo.png" alt="BNK Legal Consultancy" class="logo">
         </a>
-    </section>
+        <button class="burger" id="navToggle" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#about"    class="nav-link">About</a></li>
+            <li><a href="#contact"  class="nav-link cta">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <!-- SERVICES -->
-    <section id="services">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">OUR SERVICES</span>
-                <h2 class="section-title">Turkish Legal &amp; Business Advisory</h2>
-                <p class="section-intro">Turkish legal consultancy, cross-border business support, commercial documentation and strategic guidance tailored to your needs.</p>
-                <p class="section-note">The services outlined below are intended to provide a general overview of our areas of work and are not exhaustive. Each matter is considered individually, having regard to its nature, jurisdiction and complexity. To find out whether your matter falls within our scope of services, please <a href="#contact">contact us</a> with a brief summary of the assistance required.</p>
+<!-- ── HERO ───────────────────────────────────────────────── -->
+<section id="hero">
+    <div class="hero-body">
+        <p class="eyebrow">Est. 2021 &nbsp;·&nbsp; London, United Kingdom</p>
+        <h1>
+            <span>BNK Legal</span>
+            <em>Consultancy</em>
+        </h1>
+        <p class="tagline">Turkish legal consultancy and tailored business support for individuals, entrepreneurs and companies with interests in Türkiye and the United Kingdom.</p>
+        <div class="hero-btns">
+            <a href="#services" class="btn btn-white">Our Services</a>
+            <a href="#contact"  class="btn btn-ghost">Contact Us</a>
+        </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true"></div>
+</section>
+
+<!-- ── SERVICES ───────────────────────────────────────────── -->
+<section id="services">
+    <div class="wrap">
+
+        <div class="section-intro reveal">
+            <p class="label">Our Services</p>
+            <h2>Turkish Legal &amp; Business Advisory</h2>
+            <p class="lead">Turkish legal consultancy, cross-border business support, commercial documentation and strategic guidance tailored to your needs.</p>
+            <p class="note">The services below provide a general overview and are not exhaustive. Each matter is considered individually. To find out whether your matter falls within our scope, please <a href="#contact">contact us</a> with a brief summary of the assistance required.</p>
+        </div>
+
+        <div class="service-list">
+
+            <div class="service-row reveal">
+                <div class="service-name"><h3>Turkish Legal Advisory</h3></div>
+                <div class="service-desc"><p>Legal advice, research and practical support in relation to Turkish legal, corporate and commercial matters, including coordination with and referral to suitably qualified Turkish lawyers where specialist advice or representation is required.</p></div>
             </div>
 
-            <div class="services-grid">
+            <div class="service-row reveal">
+                <div class="service-name"><h3>Business Establishment &amp; Strategic Support</h3></div>
+                <div class="service-desc"><p>Support for individuals and businesses seeking to establish, acquire, develop or expand a business in Türkiye, as well as general business, administrative and documentary support for entrepreneurs developing commercial activities involving the United Kingdom.</p></div>
+            </div>
 
-                <div class="service-item reveal">
-                    <h3>Turkish Legal Advisory</h3>
-                    <p>Legal advice, research and practical support in relation to Turkish legal, corporate and commercial matters, including coordination with and referral to suitably qualified Turkish lawyers where specialist advice or representation is required.</p>
+            <div class="service-row reveal">
+                <div class="service-name"><h3>Corporate &amp; Commercial Advisory</h3></div>
+                <div class="service-desc"><p>Assistance with corporate structures, shareholder arrangements, partnerships, corporate governance and commercial relationships involving Türkiye, including cross-border business arrangements between Türkiye and the United Kingdom.</p></div>
+            </div>
+
+            <div class="service-row reveal">
+                <div class="service-name"><h3>Contract Drafting &amp; Commercial Documentation</h3></div>
+                <div class="service-desc"><p>Preparation, review and revision of contracts, agreements and commercial documents relating to Turkish law matters and cross-border business arrangements, including identification of key legal and commercial risks and coordination with relevant professional advisers where required.</p></div>
+            </div>
+
+            <div class="service-row reveal">
+                <div class="service-name"><h3>Cross-Border Business &amp; Market Entry Support</h3></div>
+                <div class="service-desc"><p>Strategic and practical support for businesses trading, investing, collaborating or entering into commercial relationships between the United Kingdom and Türkiye, including assistance with market entry, documentation, negotiations and coordination between the relevant parties and professional advisers.</p></div>
+            </div>
+
+            <div class="service-row reveal">
+                <div class="service-name"><h3>Legal, Corporate &amp; Bilingual Document Support</h3></div>
+                <div class="service-desc"><p>Preparation and review of legal, corporate and commercial documents, including legal research, written guidance, formal correspondence, bilingual drafting and terminology review. We also assist with notarisation, apostille and legalisation requirements and coordinate with appropriately qualified translators where certified or sworn translation is required.</p></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ── ABOUT ──────────────────────────────────────────────── -->
+<section id="about">
+    <div class="wrap">
+
+        <div class="about-header reveal">
+            <p class="label">About Us</p>
+            <h2>BNK Legal Consultancy Ltd</h2>
+        </div>
+
+        <div class="about-text">
+            <p class="lead reveal">BNK Legal Consultancy Ltd is an independent legal and business consultancy founded by Busra Nur Kapkara and Erdem Kapkara and incorporated in England and Wales in March 2021.</p>
+
+            <p class="reveal">We provide Turkish legal consultancy and cross-border business support to individuals, entrepreneurs and companies based in the United Kingdom, Türkiye and internationally. Our work is particularly focused on clients who have legal or commercial interests in Türkiye, including those establishing or developing a business, working with Turkish companies, entering into partnerships, reviewing commercial arrangements or requiring assistance with Turkish legal and corporate matters.</p>
+
+            <div class="founders reveal">
+                <div class="founder">
+                    <h3>Busra Nur Kapkara</h3>
+                    <p class="role">Director &amp; Co-Founder</p>
+                    <p>Busra Nur Kapkara is an Avukat admitted to the Istanbul Bar Association and a practising Solicitor of England and Wales. She leads the company's legal and consultancy work and is responsible for its professional direction and client matters.</p>
                 </div>
-
-                <div class="service-item reveal">
-                    <h3>Business Establishment &amp; Strategic Support</h3>
-                    <p>Support for individuals and businesses seeking to establish, acquire, develop or expand a business in Türkiye, as well as general business, administrative and documentary support for entrepreneurs developing commercial activities involving the United Kingdom.</p>
+                <div class="founder">
+                    <h3>Erdem Kapkara</h3>
+                    <p class="role">Director &amp; Co-Founder</p>
+                    <p>Erdem Kapkara oversees the company's day-to-day administrative and operational support, including the coordination of enquiries, appointments, documentation, records and invoicing. He also liaises with clients and external professionals on administrative matters. He does not provide legal advice.</p>
                 </div>
+            </div>
 
-                <div class="service-item reveal">
-                    <h3>Corporate &amp; Commercial Advisory</h3>
-                    <p>Assistance with corporate structures, shareholder arrangements, partnerships, corporate governance and commercial relationships involving Türkiye, including cross-border business arrangements between Türkiye and the United Kingdom.</p>
-                </div>
+            <p class="reveal">Since 2021, we have supported clients with a range of legal, contractual, corporate and business-related matters. Much of our work comes through personal recommendations, returning clients and established professional relationships.</p>
 
-                <div class="service-item reveal">
-                    <h3>Contract Drafting &amp; Commercial Documentation</h3>
-                    <p>Preparation, review and revision of contracts, agreements and commercial documents relating to Turkish law matters and cross-border business arrangements, including identification of key legal and commercial risks and coordination with relevant professional advisers where required.</p>
-                </div>
+            <p class="reveal">We work directly with our clients and do not offer standardised online packages. Each enquiry is reviewed individually before instructions are accepted. Depending on the client's location and the nature of the matter, consultations may take place in person, by email, by telephone or by video conference.</p>
 
-                <div class="service-item reveal">
-                    <h3>Cross-Border Business &amp; Market Entry Support</h3>
-                    <p>Strategic and practical support for businesses trading, investing, collaborating or entering into commercial relationships between the United Kingdom and Türkiye, including assistance with market entry, documentation, negotiations and coordination between the relevant parties and professional advisers.</p>
-                </div>
-
-                <div class="service-item reveal">
-                    <h3>Legal, Corporate &amp; Bilingual Document Support</h3>
-                    <p>Preparation and review of legal, corporate and commercial documents, including legal research, written guidance, formal correspondence, bilingual drafting and terminology review. We also assist with notarisation, apostille and legalisation requirements and coordinate with appropriately qualified translators where certified or sworn translation is required.</p>
-                </div>
-
+            <div class="sra-notice reveal">
+                <p>BNK Legal Consultancy Ltd is not authorised or regulated by the Solicitors Regulation Authority as a law firm. Busra Nur Kapkara is a practising Solicitor of England and Wales and is individually authorised and regulated by the Solicitors Regulation Authority. Her individual authorisation is separate from the regulatory status of BNK Legal Consultancy Ltd and does not mean that the company itself is an SRA-authorised practice.</p>
             </div>
         </div>
-    </section>
 
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-label">ABOUT US</span>
-                <h2 class="section-title">BNK Legal Consultancy Ltd</h2>
+    </div>
+</section>
+
+<!-- ── CONTACT ────────────────────────────────────────────── -->
+<section id="contact">
+    <div class="wrap">
+        <div class="contact-grid">
+
+            <div class="contact-info reveal">
+                <p class="label">Contact</p>
+                <h2>Get in Touch</h2>
+                <p>To find out whether your matter falls within our scope of services, please contact us by email or telephone with a brief summary of the assistance required.</p>
+
+                <dl class="details">
+                    <div>
+                        <dt>Email</dt>
+                        <dd><a href="mailto:info@bnklegal.co.uk">info@bnklegal.co.uk</a></dd>
+                    </div>
+                    <div>
+                        <dt>Telephone</dt>
+                        <dd>
+                            <a href="tel:+447587581738">+44 7587 581738</a><br>
+                            <a href="tel:+447979466902">+44 7979 466902</a>
+                        </dd>
+                    </div>
+                    <div>
+                        <dt>Office</dt>
+                        <dd>Office 403, Screenworks<br>22 Highbury Grove<br>London, N5 2ER</dd>
+                    </div>
+                </dl>
             </div>
 
-            <div class="about-body">
-                <p class="lead-text reveal">BNK Legal Consultancy Ltd is an independent legal and business consultancy founded by Busra Nur Kapkara and Erdem Kapkara and incorporated in England and Wales in March 2021.</p>
-
-                <p class="reveal">We provide Turkish legal consultancy and cross-border business support to individuals, entrepreneurs and companies based in the United Kingdom, Türkiye and internationally. Our work is particularly focused on clients who have legal or commercial interests in Türkiye, including those establishing or developing a business, working with Turkish companies, entering into partnerships, reviewing commercial arrangements or requiring assistance with Turkish legal and corporate matters.</p>
-
-                <div class="founders-grid">
-                    <div class="founder-item reveal">
-                        <h3>Busra Nur Kapkara</h3>
-                        <span class="founder-role">Director &amp; Co-Founder</span>
-                        <p>Busra Nur Kapkara is an Avukat admitted to the Istanbul Bar Association and a practising Solicitor of England and Wales. She leads the company's legal and consultancy work and is responsible for its professional direction and client matters.</p>
+            <div class="contact-form-wrap reveal">
+                <form id="contactForm" action="https://formspree.io/f/xwvjdvob" method="POST">
+                    <div class="field">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
                     </div>
-                    <div class="founder-item reveal">
-                        <h3>Erdem Kapkara</h3>
-                        <span class="founder-role">Director &amp; Co-Founder</span>
-                        <p>Erdem Kapkara oversees the company's day-to-day administrative and operational support, including the coordination of enquiries, appointments, documentation, records and invoicing. He also liaises with clients and external professionals on administrative matters. He does not provide legal advice.</p>
+                    <div class="field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
                     </div>
-                </div>
-
-                <p class="reveal">Since 2021, we have supported clients with a range of legal, contractual, corporate and business-related matters. Much of our work comes through personal recommendations, returning clients and established professional relationships. We value this way of working because it allows us to build a clear understanding of each client's circumstances and provide support that is practical, considered and appropriate to their needs.</p>
-
-                <p class="reveal">We work directly with our clients and do not offer standardised online packages. Each enquiry is reviewed individually before instructions are accepted. Depending on the client's location and the nature of the matter, consultations may take place in person, by email, by telephone or by video conference.</p>
-
-                <div class="regulatory-notice reveal">
-                    <p>BNK Legal Consultancy Ltd is not authorised or regulated by the Solicitors Regulation Authority as a law firm. Busra Nur Kapkara is a practising Solicitor of England and Wales and is individually authorised and regulated by the Solicitors Regulation Authority. Her individual authorisation is separate from the regulatory status of BNK Legal Consultancy Ltd and does not mean that the company itself is an SRA-authorised practice.</p>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Please describe how we can assist you..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-full">Send Enquiry</button>
+                    <p class="form-note">Your enquiry is treated with complete confidentiality.</p>
+                </form>
+                <div id="formSuccess" class="form-success">
+                    <h3>Thank You</h3>
+                    <p>Your enquiry has been received. We will be in touch shortly.</p>
                 </div>
             </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="container">
-            <div class="contact-grid">
-
-                <div class="contact-info reveal">
-                    <span class="section-label">CONTACT</span>
-                    <h2 class="section-title">Get in Touch</h2>
-                    <p>To find out whether your matter falls within our scope of services, please contact us by email or telephone with a brief summary of the assistance required.</p>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <strong>Email</strong>
-                            <span><a href="mailto:info@bnklegal.co.uk">info@bnklegal.co.uk</a></span>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Telephone</strong>
-                            <span>+44 7587 581738<br>+44 7979 466902</span>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Office</strong>
-                            <span>Office 403, Screenworks<br>22 Highbury Grove<br>London, N5 2ER<br>United Kingdom</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contact-form-wrap reveal">
-                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xwvjdvob" method="POST">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your full name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="6" placeholder="Please describe how we can assist you..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">Send Enquiry</button>
-                        <p class="form-note">Your enquiry is treated with complete confidentiality.</p>
-                    </form>
-                    <div class="form-success" id="formSuccess">
-                        <h3>Thank You</h3>
-                        <p>Your enquiry has been received. We will be in touch shortly.</p>
-                    </div>
-                </div>
-
-            </div>
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer id="footer">
+    <div class="wrap">
+        <div class="footer-top">
+            <img src="yenlogo.png" alt="BNK Legal Consultancy" class="logo logo-footer">
+            <nav aria-label="Footer navigation">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer id="footer">
-        <div class="container">
-            <div class="footer-top">
-                <img src="yenlogo.png" alt="BNK Legal Consultancy" class="logo-img logo-img-footer">
-                <nav class="footer-links">
-                    <a href="#services">Services</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </div>
-            <div class="footer-legal">
-                <p>&copy; 2021 BNK Legal Consultancy Ltd. All rights reserved.</p>
-                <p>The information provided on this website is for general informational purposes only and does not constitute legal advice or create a solicitor-client relationship. Advice should be obtained in relation to your specific circumstances before taking or refraining from any action.</p>
-                <p>BNK Legal Consultancy Ltd is registered in England and Wales under company number 13261158. The company is not authorised or regulated by the Solicitors Regulation Authority as a law firm.</p>
-                <p>Busra Nur Kapkara is a practising Solicitor of England and Wales and is individually authorised and regulated by the Solicitors Regulation Authority. Her individual authorisation does not extend to BNK Legal Consultancy Ltd or automatically apply to all services provided by the company.</p>
-            </div>
+        <div class="footer-legal">
+            <p>&copy; 2021 BNK Legal Consultancy Ltd. All rights reserved.</p>
+            <p>The information provided on this website is for general informational purposes only and does not constitute legal advice or create a solicitor-client relationship. Advice should be obtained in relation to your specific circumstances before taking or refraining from any action.</p>
+            <p>BNK Legal Consultancy Ltd is registered in England and Wales under company number 13261158. The company is not authorised or regulated by the Solicitors Regulation Authority as a law firm.</p>
+            <p>Busra Nur Kapkara is a practising Solicitor of England and Wales and is individually authorised and regulated by the Solicitors Regulation Authority. Her individual authorisation does not extend to BNK Legal Consultancy Ltd or automatically apply to all services provided by the company.</p>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
