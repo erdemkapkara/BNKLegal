@@ -84,7 +84,7 @@
 
             const btn = contactForm.querySelector('button[type="submit"]');
             const orig = btn.innerHTML;
-            btn.innerHTML = '<span>Sending…</span><i class="fa-solid fa-spinner fa-spin"></i>';
+            btn.textContent = 'Sending…';
             btn.disabled = true;
 
             try {
